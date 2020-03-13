@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zstu-CAD.github.io</id>
     <title>CADCADCAD</title>
-    <updated>2020-03-13T03:58:49.473Z</updated>
+    <updated>2020-03-13T04:05:24.471Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zstu-CAD.github.io"/>
     <link rel="self" href="https://zstu-CAD.github.io/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://zstu-CAD.github.io/images/avatar.png</logo>
     <icon>https://zstu-CAD.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, CADCADCAD</rights>
+    <entry>
+        <title type="html"><![CDATA[Array Shrinking]]></title>
+        <id>https://zstu-CAD.github.io/array-shrinking/</id>
+        <link href="https://zstu-CAD.github.io/array-shrinking/">
+        </link>
+        <updated>2020-03-13T04:03:15.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://codeforces.com/contest/1312/problem/E">E - Array Shrinking</a></p>
+<p>用<code>dp[i][j].fi</code>表示连通块的大小，用<code>dp[i][j].se</code>表示连通块表示的数。</p>
+<p>然后再进行动态规划，<code>a[i]</code>表示从<code>1~i</code>可以得到的最短长度。</p>
+<pre><code class="language-cpp">// Created by CAD on 2020/3/9.
+#include &lt;bits/stdc++.h&gt;
+
+#define fi first
+#define se second
+#define pii pair&lt;int,int&gt;
+using namespace std;
+
+pii dp[505][505];
+int a[505];
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int n;cin&gt;&gt;n;
+    for(int i=1;i&lt;=n;++i)
+        cin&gt;&gt;dp[i][i].se,dp[i][i].fi=1;
+    for(int i=1;i&lt;=n;++i)
+        for(int j=i;j&gt;=1;--j){
+            for(int k=i-1;k&gt;=j;--k){
+                if(dp[k+1][i].se&amp;&amp;dp[j][k].se&amp;&amp;dp[k+1][i].se==dp[j][k].se)
+                    dp[j][i].se=dp[k+1][i].se+1,dp[j][i].fi=dp[k+1][i].fi+dp[j][k].fi;
+            }
+        }
+    for(int i=1;i&lt;=n;++i){
+        a[i]=a[i-1]+1;
+        for(int j=i-1;j&gt;=1;--j){
+            if(dp[j][i].fi) a[i]=min(a[i-dp[j][i].fi]+1,a[i]);
+        }
+    }
+    cout&lt;&lt;a[n]&lt;&lt;&quot;\n&quot;;
+    return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://zstu-CAD.github.io/hello-gridea/</id>
