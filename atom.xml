@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://CAD.github.io</id>
+    <id>https://CAD.github.io</id>
     <title>CADCADCAD</title>
-    <updated>2020-03-14T11:23:42.598Z</updated>
+    <updated>2020-03-14T11:24:13.039Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://CAD.github.io"/>
-    <link rel="self" href="http://CAD.github.io/atom.xml"/>
+    <link rel="alternate" href="https://CAD.github.io"/>
+    <link rel="self" href="https://CAD.github.io/atom.xml"/>
     <subtitle>CAD加油！</subtitle>
-    <logo>http://CAD.github.io/images/avatar.png</logo>
-    <icon>http://CAD.github.io/favicon.ico</icon>
+    <logo>https://CAD.github.io/images/avatar.png</logo>
+    <icon>https://CAD.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, CADCADCAD</rights>
     <entry>
         <title type="html"><![CDATA[Array Shrinking]]></title>
-        <id>http://CAD.github.io/array-shrinking/</id>
-        <link href="http://CAD.github.io/array-shrinking/">
+        <id>https://CAD.github.io/array-shrinking/</id>
+        <link href="https://CAD.github.io/array-shrinking/">
         </link>
         <updated>2020-03-13T04:03:15.000Z</updated>
         <content type="html"><![CDATA[<p><a href="https://codeforces.com/contest/1312/problem/E">E - Array Shrinking</a></p>
@@ -57,8 +57,8 @@ int main()
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://CAD.github.io/hello-gridea/</id>
-        <link href="http://CAD.github.io/hello-gridea/">
+        <id>https://CAD.github.io/hello-gridea/</id>
+        <link href="https://CAD.github.io/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
